@@ -3,6 +3,7 @@ def valid_move?(board, index)
   index_number = board[index.to_i]
   if position_taken?(board, index)
     index_number.between?(0, 8)
+    true
   end
 end
 
